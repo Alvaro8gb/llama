@@ -6,4 +6,4 @@ ADD . /llama
 RUN pip install -r /llama/requirements.txt 
 
 EXPOSE 8001
-ENTRYPOINT ["torchrun", "--nproc_per_node", "2", "api.py"]
+ENTRYPOINT ["torchrun", "--nproc_per_node", "1", "api.py"]
